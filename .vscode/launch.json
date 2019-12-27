@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeiraClasseJava",
+            "request": "launch",
+            "mainClass": "cursojava.executavel.PrimeiraClasseJava"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeiraClasseJava",
+            "request": "launch",
+            "mainClass": "cursojava.executavel.PrimeiraClasseJava",
+            "projectName": "Meu-Primeiro-Programa"
+        }
+    ]
+}
