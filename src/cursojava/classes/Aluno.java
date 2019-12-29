@@ -5,15 +5,8 @@ import java.util.List;
 
 import cursojava.constantes.StatusAluno;
 
-public class Aluno {
+public class Aluno extends Pessoa {
 
-    private String nome;
-    private int idade;
-    private String dataNascimento;
-    private String registroGeral;
-    private String numeroCpf;
-    private String nomeMae;
-    private String nomePai;
     private String dataMatricula;
     private String nomeEscola;
     private String serieMatriculado;
@@ -26,7 +19,7 @@ public class Aluno {
     }
 
     public Aluno(String nomePadrao) { // Cria os dados na memória - Sendo padrão do Java
-        nome = nomePadrao;
+        super.nome = nomePadrao;
     }
 
     public List<Disciplina> getDisciplinas() {
@@ -197,7 +190,18 @@ public class Aluno {
         this.serieMatriculado = serieMatriculado;
     }
 
-    
+    @Override
+    public boolean pessoaMaiorIdade() {
+        // TODO Auto-generated method stub
+        // return super.pessoaMaiorIdade();
+        return idade >= 21;
+    }
+
+    @Override
+    public double salario() {
+        // TODO Auto-generated method stub
+        return 1500.68;
+    }
 
     
 

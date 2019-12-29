@@ -6,8 +6,13 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 import cursojava.classes.Aluno;
+import cursojava.classes.Diretor;
 import cursojava.classes.Disciplina;
+import cursojava.classes.Secretario;
+import cursojava.classesauxiliares.FuncaoAutenticacao;
 import cursojava.constantes.StatusAluno;
+import cursojava.interfaces.PermitirAcesso;
+
 
 public class PrimeiraClasseJava {
     
@@ -16,7 +21,20 @@ public class PrimeiraClasseJava {
         String login = JOptionPane.showInputDialog(null, "Informe o login");
         String senha = JOptionPane.showInputDialog(null, "Informe a senha");
 
-        if (login.equals("admin") && senha.equals("admin") ) {
+        // Secretario secretario = new Secretario(); // Trabalhar diretamente com o objeto
+        
+        // PermitirAcesso secretario = new Secretario();
+        
+        // secretario.setLogin(login); // trabalhar diretamente com o objeto
+        // secretario.setSenha(senha);
+
+        // if (secretario.autenticar()){}
+
+
+        // PermitirAcesso permitirAcesso = new Secretario(login, senha);
+        PermitirAcesso permitirAcesso = new Diretor(login, senha);
+
+        if (new FuncaoAutenticacao(permitirAcesso).autenticar()) { // vou travar o contrato para autorizar somente quem realmente tem o contrato 100% legítimo.
 
         List<Aluno> alunos = new ArrayList<Aluno>();
 
