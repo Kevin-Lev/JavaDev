@@ -36,7 +36,8 @@ public class Aluno extends Pessoa {
         double somaNotas = 0.0;
 
         for(Disciplina disciplina: disciplinas) {
-            somaNotas += disciplina.getNota();
+            somaNotas += disciplina.getMediaNotas();
+            // double notas[] = disciplina.getNota();
         }
 
          System.out.println(somaNotas / disciplinas.size());

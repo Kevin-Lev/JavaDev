@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SplitArray",
+            "request": "launch",
+            "mainClass": "cursojava.executavel.SplitArray",
+            "projectName": "cursojavadev"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Matriz",
+            "request": "launch",
+            "mainClass": "cursojava.executavel.Matriz",
+            "projectName": "cursojavadev"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayVetor",
+            "request": "launch",
+            "mainClass": "cursojava.executavel.ArrayVetor",
+            "projectName": "cursojavadev"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestandoClassesFilhas",
             "request": "launch",
             "mainClass": "cursojava.classes.TestandoClassesFilhas",
