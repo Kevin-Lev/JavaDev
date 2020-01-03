@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExecutarTela",
+            "request": "launch",
+            "mainClass": "cursojava.thread.ExecutarTela",
+            "projectName": "cursojavadev"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AulaThread",
+            "request": "launch",
+            "mainClass": "cursojava.thread.AulaThread",
+            "projectName": "cursojavadev"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SplitArray",
             "request": "launch",
             "mainClass": "cursojava.executavel.SplitArray",
