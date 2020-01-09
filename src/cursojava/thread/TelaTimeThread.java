@@ -119,6 +119,9 @@ public class TelaTimeThread extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                startButton.setEnabled(false);
+                stopButton.setEnabled(true);
+
                 if (fila == null){
                     fila = new ImplementacaoFilaThread();
                     fila.start();
@@ -142,6 +145,9 @@ public class TelaTimeThread extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 fila.stop();
                 fila = null; // "mata o objeto"
+
+                stopButton.setEnabled(false);
+                startButton.setEnabled(true);
             }
         
         });
